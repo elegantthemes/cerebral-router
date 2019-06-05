@@ -1,0 +1,41 @@
+// MOCKING
+/* eslint-env mocha */
+/* eslint-disable no-console */
+import { Controller, Module } from 'cerebral'
+import addressbar from 'addressbar'
+
+const devtools = {
+  init() {},
+  send() {},
+  sendExecutionData() {},
+}
+
+function makeTest(router, signals) {
+  return Controller(
+    Module({
+      state: {
+        hello: 'world',
+      },
+      modules: {
+        router,
+      },
+      signals,
+    }),
+    { devtools }
+  )
+}
+
+module.exports = {
+  makeTest,
+  triggerUrlChange(url) {
+    let defaultPrevented = false
+
+    addressbar.emit('change', {
+      preventDefault() {
+        defaultPrevented = true
+      },
+      target: { value: addressbar.origin + url },
+    })
+    if (!defaultPrevented) addressbar.value = url
+  },
+}

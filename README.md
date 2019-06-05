@@ -1,10 +1,11 @@
-# @cerebral/router
+# cerebral-router
+This is a fork of `@cerebral/router` created to use the latest version of `url-mapper`.
+
+For more info, see cerebral/cerebral#1259.
 
 ## Install
 
-**NPM**
-
-`npm install @cerebral/router`
+`yarn add elegantthemes/cerebral-router`
 
 ## Description
 
