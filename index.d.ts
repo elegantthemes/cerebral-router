@@ -1,0 +1,26 @@
+export interface Route {
+  path: string
+  signal?: string
+
+  // EXPERIMENTAL: NOT PART OF OFFICIAL API
+  map?: { [key: string]: any }
+  rmap?: { [key: string]: any }
+}
+
+export interface RouterOptions {
+  allowEscape?: boolean
+  baseUrl?: string
+  onlyHash?: boolean
+  preventAutostart?: boolean
+  query?: boolean
+  routes: Route[]
+
+  // EXPERIMENTAL: NOT PART OF OFFICIAL API
+  filterFalsy?: boolean
+}
+
+export interface Provider {
+  redirect: (url: string) => void
+}
+
+export default function Router(opts: RouterOptions): any

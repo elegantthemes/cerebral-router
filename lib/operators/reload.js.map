@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/operators/reload.js"],"names":["reload","router"],"mappings":";;;;;kBAAwBA,M;AAAT,SAASA,MAAT,OAA4B;AAAA,MAAVC,MAAU,QAAVA,MAAU;;AACzCA,SAAOD,MAAP;AACD","file":"reload.js","sourcesContent":["export default function reload({ router }) {\n  router.reload()\n}\n"]}
