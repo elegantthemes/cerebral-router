@@ -5,7 +5,7 @@ For more info, see cerebral/cerebral#1259.
 
 ## Install
 
-`yarn add elegantthemes/cerebral-router`
+`yarn add @elegantthemes/cerebral-router`
 
 ## Description
 
