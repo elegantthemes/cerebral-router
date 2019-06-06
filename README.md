@@ -1,7 +1,7 @@
 # cerebral-router
 This is a fork of `@cerebral/router` created to use the latest version of `url-mapper`.
 
-For more info, see cerebral/cerebral#1259.
+For more info, see [cerebral/cerebral#1259](https://github.com/cerebral/cerebral/issues/1259).
 
 ## Install
 
